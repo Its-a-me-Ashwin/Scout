@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        
+        .grad{
+          margin-right: auto;
+          margin-left: auto;
+          height: 600px;
+          width: 800px;
+          background-color: rgb(241, 214, 172); /* For browsers that do not support gradients */
+          background-image: linear-gradient(to bottom right, rgb(148, 142, 91), rgb(245, 245, 220));
+          border-radius: 15px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 25px 0 rgba(0, 0, 0, 0.19);
+        }    
+        h1 {
+          color : black;
+          text-align: center;
+          font-family: serif;
+          font-size: 50px;
+        }
+        
+        a:hover {
+          opacity: 60;
+        }
+        
+        div.search_bar
+        {
+          position: relative;
+          top: 15px;
+          left: 550px;
+          width: 200px;
+          height: 100px;
+          border-color: black;
+          border-radius: 5px;
+        }
+        
+        div.Twitter{
+          position: relative;
+          top: 5px;
+          left: 20px;
+          width: 0px;
+          height: 0px;
+        }
+        
+        div.Insta{
+          position: relative;
+          top: 5px;
+          left: 80px;
+          width: 0px;
+          height: 0px;
+        }
+        h2{
+          position: relative;
+          top: 60px;
+          text-align: center;
+        } 
+
+
+        img.city_pic{
+          position: absolute;
+          top: 260px;
+          left: 900px;
+          width: 250px;
+          height: 250px;
+          border-radius: 47%;
+        }
+        .search{
+          border-radius:10px;
+          background-color: rgb(245, 245, 220);
+        }
+        .side{
+          position: fixed;
+          width : 42px;
+          height: 42px;
+          left : 390px;
+        }
+        .temp{
+          position : fixed;
+          left: 485px;
+          font-size: 35px;
+        }
+        .day{
+          writing-mode: tb-rl;
+          position: fixed;
+          border-left: 2px solid black;
+          left: 440px;
+        }
+        .side:hover{
+          opacity: 0.85;
+        }
+        .date{
+          font-weight: bold;
+          font-size: 20px;
+          position: relative;
+          text-align: center;
+          top: 0px;
+          right: 75px;
+        }
+        .current{
+          position: relative;
+          top: 125px;
+          align-content: center;
+        }
+        .city{
+          position: absolute;
+          width: 200px;
+          height: 200px;
+          top: 260px;
+          left: 900px;
+          border-radius: 47%;
+        }
+  </style>
+        
+        
+        
+  <body style = "background-color:rgb(245, 245, 220) ;">
+  <div class = "grad"> 
+    <h2> Wearest. </h2>
+    <div class = "Twitter">
+    <a href = "http://www.twitter.com">  
+      <img src = "twitter.png" alt = "twitter logo" style = "position:fixed;width:30px;height:30px;">
+    </a>
+    </div>
+    <div class="Insta">
+    <a href= "http://www.instagram.com">
+      <img src = "instagram-logo.png" alt= "instagram logo" style = "position:fixed;width:30px;height:30px;">
+    </a>
+    </div>
+
+
+    <div class = "city_pic">
+      
+    </div>
+    <img class = "city" src = "background.jpg" alt = "picture">
+
+
+    <div class = "boxie">
+      <div id = "searchContainer" class = "search_bar" style = "height:23px;border-radius: 10px;background-color: rgb(245, 245, 220);box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 25px 0 rgba(0, 0, 0, 0.19);">
+        <button id = "searchBtn" style = "left: auto;background-color: rgb(245, 245, 220);border-radius: 10px;"> <i class="fa fa-search"></i> </button>  
+        <input type = "text" placeholder="search city" id = "searchInput" class = "search">
+      </div>
+    </div>
+
+
+    <div class = "side_bois">
+      <img class="side" src="snowflake.png" alt ="winter" style = "top:250px;">
+      <img class="side" src="snowflake.png" alt ="winter" style = "top:300px;">
+      <img class="side" src="snowflake.png" alt ="winter" style = "top:350px;">
+      <img class="side" src="snowflake.png" alt ="winter" style = "top:400px;">
+      <img class="side" src="snowflake.png" alt ="winter" style = "top:450px;">
+      <img class="side" src="snowflake.png" alt ="winter" style = "top:500px;">
+
+      <p class = day id = "d0" style = "top:240px;"> SUN </p>
+      <p class = day id = "d1" style = "top:290px;"> MON </p>
+      <p class = day id = "d2" style = "top:340px;"> TUE </p>
+      <p class = day id = "d3" style = "top:390px;"> WED </p>
+      <p class = day id = "d4" style = "top:440px;"> THR </p>
+      <p class = day id = "d5" style = "top:490px;"> FRI </p>
+
+      <p class ="temp" id = "t0" style = "top:200px;  "> 2<sup><sup>o</sup></sup> </p>
+      <p class ="temp" id = "t1" style = "top:250px;  "> 4<sup><sup>o</sup></sup> </p>
+      <p class ="temp" id = "t2" style = "top:300px;  "> 1<sup><sup>o</sup></sup> </p>
+      <p class ="temp" id = "t3" style = "top:350px;  "> 3<sup><sup>o</sup></sup> </p>
+      <p class ="temp" id = "t4" style = "top:400px;  "> 5<sup><sup>o</sup></sup> </p>
+      <p class ="temp" id = "t5" style = "top:450px;  "> 4<sup><sup>o</sup></sup> </p>
+    </div>
+
+
+    <div class = "current">
+      <img src = "snowflake.png" alt = "winter" height = "60px" width = "60px" style="position:relative;left:250px;top:0px;">
+      <p style = "position:relative;font-size: 45px;left:320px;bottom:115px;border-left:2px solid black;" id = "current_temp">  </p>
+    </div>
+    <p class = "date" id = "date"> Monday 30 Feb 2019</p>
+    <p class = "date" id = "place" style = "font-weight:normal;font-size:small;top:-10px;padding-left: 70px;">Seoul, South Korea </p>
+
+  </div>
+
+  <script src="script.js">
+  </script>
+  </body>
+</html>
+
