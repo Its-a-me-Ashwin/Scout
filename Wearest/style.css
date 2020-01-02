@@ -1,0 +1,120 @@
+body{
+    background-color:rgb(245, 245, 220) ;
+}
+
+.grad{
+    position: relative;
+    margin: auto;
+    width: 800px;
+    height: 500px;
+    background-color: blanchedalmond;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 25px 0 rgba(0, 0, 0, 0.19);
+}
+h2 {
+    text-align: center;
+}
+.row{
+    padding: 10px;
+    content: "";
+    clear: both;
+    display: table;
+}
+.Twitter{
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+.Insta{
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+.twitter_img{
+    height: 42px;
+    width: 42px;
+}
+.insta_img{
+    height: 42px;
+    width: 42px;
+}
+
+.search_bar{
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 25px 0 rgba(0, 0, 0, 0.19);
+    margin-right: auto;
+}
+
+.search_bar{
+    position: absolute;
+    right: 32px;
+    top: 64px;
+    border-color: beige;
+    border-style: solid;
+    background-color: beige;
+    border-radius: 7px;
+}
+
+.search{
+    background-color: beige;
+}
+
+.city{
+    height: 225px;
+    width: 225px;
+    border-radius: 55%;
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+    font-size: 18px;
+}
+
+.side{
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    left: 25px;
+}
+
+.day{
+    writing-mode: tb-rl;
+    border-left: 2px solid black;
+    position: absolute;
+    left: 75px;
+}
+.temp{
+    font-size: 25px;
+    position: absolute;
+    left: 100px;
+}
+
+.side:hover{
+    opacity: 50;
+}
+
+.current_temp{
+    font-size: 30px;
+    font-weight: bold;
+    border-left: 2px solid black;
+}
+.date{
+    text-align: center;
+    font-weight: bold;
+}
+
+.current{
+    text-align: center;
+
+}
+.current a img{
+         display:block;
+}
+.current > a{
+         display:inline-block;
+         vertical-align: middle;
+         /*border: 1px solid #555*/
+}
+
+
