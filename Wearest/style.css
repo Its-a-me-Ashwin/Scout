@@ -1,120 +1,82 @@
 body{
-    background-color:rgb(245, 245, 220) ;
+    background-color: rgb(236, 207, 169);
+} 
+
+.grad{
+    margin-top: 40px;
+    width: 800px;
+    overflow: hidden;
+    background-color: blanchedalmond;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 25px 0 rgba(0, 0, 0, 0.19);
 }
 
 .grad{
     position: relative;
     margin: auto;
     width: 800px;
-    height: 500px;
+    height: 580px;
     background-color: blanchedalmond;
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 25px 0 rgba(0, 0, 0, 0.19);
 }
-h2 {
-    text-align: center;
+
+.title{
+    font-weight: bold;
+    font-size: 25px;
 }
-.row{
-    padding: 10px;
-    content: "";
-    clear: both;
-    display: table;
-}
-.Twitter{
-    float: left;
-    width: 33.33%;
-    padding: 10px;
+.season:hover{
+    opacity: 75%;
 }
 
-.Insta{
-    float: left;
-    width: 33.33%;
-    padding: 10px;
+.sc{
+
 }
 
-.twitter_img{
-    height: 42px;
-    width: 42px;
+.container-search{
+   
 }
-.insta_img{
-    height: 42px;
-    width: 42px;
-}
-
-.search_bar{
-    position: relative;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 25px 0 rgba(0, 0, 0, 0.19);
-    margin-right: auto;
-}
-
-.search_bar{
-    position: absolute;
-    right: 32px;
-    top: 64px;
-    border-color: beige;
-    border-style: solid;
-    background-color: beige;
-    border-radius: 7px;
-}
-
-.search{
-    background-color: beige;
-}
-
-.city{
-    height: 225px;
-    width: 225px;
-    border-radius: 55%;
-    position: absolute;
-    bottom: 32px;
-    right: 32px;
-    font-size: 18px;
-}
-
-.side{
-    width: 42px;
-    height: 42px;
-    position: absolute;
-    left: 25px;
-}
-
 .day{
-    writing-mode: tb-rl;
+    font-weight: bold;
+    font-size:10px;
+    word-wrap:break-word;
+    width:2px;
+    margin-top:10px;
     border-left: 2px solid black;
-    position: absolute;
-    left: 75px;
 }
 .temp{
-    font-size: 25px;
-    position: absolute;
-    left: 100px;
-}
-
-.side:hover{
-    opacity: 50;
-}
-
-.current_temp{
-    font-size: 30px;
+    padding-left: 100%;
+    font-size: medium;
     font-weight: bold;
-    border-left: 2px solid black;
+}
+.mid{
+    margin: 0 auto;
+    float: None;
 }
 .date{
-    text-align: center;
-    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: lighter;
 }
 
-.current{
-    text-align: center;
+.temp-mid{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter    ;
+    font-size: 35px;
+    width:2px;
+    border-left: 2px solid black;
+    /*padding-right: 125%;*/
+}
+.text-current{
 
 }
-.current a img{
-         display:block;
-}
-.current > a{
-         display:inline-block;
-         vertical-align: middle;
-         /*border: 1px solid #555*/
+
+.date{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: large;
 }
 
-
+.bg-img{
+    border-radius: 48%;
+}

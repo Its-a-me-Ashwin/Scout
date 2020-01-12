@@ -150,7 +150,7 @@ function init(result)
     }
     console.log(season);
     current_temp_id = document.getElementById('current_temp');
-    current_temp_id.innerHTML = `&nbsp; ${Math.round(result.main['feels_like'])}<sup><sup>o</sup></sup>`;
+    current_temp_id.innerHTML = `${Math.round(result.main['feels_like'])}<sup><sup>o</sup></sup>`;
     current_date_id = document.getElementById('date');
     current_date_id.innerHTML = day+', '+date.getDate()+' '+month+' '+date.getFullYear();
     current_place_id = document.getElementById('place');
